@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #c0c0c0;
+    margin: 20px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: 
+        "header header header header"
+        "nav main main main"
+        "nav main main main"
+        "footer footer footer footer";
+}
+
+.container .header {
+	background: #12203e;
+    color: #fff;
+    border-radius: 5px;
+    min-height: 50px;
+    grid-area: header;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .header img {
+    height: 75%;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.container .header h3 {
+    font-size: 18px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.container .header h3 span {
+    color: #cf0809;
+}
+
+.container .nav {
+    background-color: #fff;
+    border-radius: 5px;
+    min-height: 250px;
+    grid-area: nav;
+}
+
+.container .nav .navegacion {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container .nav .navegacion a {
+    display: block;
+    margin-top: 25px;
+    color: #12203e;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all ease-in-out 0.3s;
+}
+
+.container .nav .navegacion a:hover {
+    font-size: 16px;
+}
+
+.container .nav .navegacion a span {
+    font-size: 15px;
+    color: #010205;
+}
+
+.container .main {
+    min-height: 600px;
+    grid-area: main;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.container .main .formulario {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.container .main .formulario form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container .main .formulario form input {
+    border: 1px solid #010205;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.container .main .formulario form .btn-buscar {
+    width: 50%;
+    align-self: center;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px 0;
+    background-color: #12203e;
+    border: 1px solid #010205;
+    transition: all ease-in-out 0.3s;
+}
+
+.container .main .formulario form .btn-buscar:hover {
+    width: 55%;
+    padding: 7px 0;
+    background-color: #12203ede;
+}
+
+.section {
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    margin-top: 25px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas: 
+        "card1 card2"
+        "card1 card2"
+}
+
+.section .card1 {
+    grid-area: card1;
+}
+
+.section .card2 {
+    grid-area: card2;
+}
+
+.section .card1,
+.section .card2 {
+    height: 95%;
+    background-color:#e4dfdf;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section .card1 img {
+    width: 25%;
+}
+
+.contenido h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section-excel {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas: 
+        "card1 card2"
+        "card1 card2";
+}
+
+.section-excel .card1-excel {
+    grid-area: card1;
+}
+
+.section-excel .card2-excel {
+    grid-area: card2;
+}
+
+.section-excel .card1-excel,
+.section-excel .card2-excel {
+    height: 95%;
+    width: 95%;
+    padding: 5px;
+    margin: 5px;
+    background-color: #e4dfdf;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card1-excel ol li {
+    margin-top: 5px;
+}
+
+li {
+    list-style-position: inside ;
+}
+
+.text-alerta {
+    color: #12203e;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2px 2px;
+}
+
+.card1-excel h4,
+.card2-excel h4 {
+    align-self: center;
+    margin: 10px 0;
+}
+
+.btn-descargar {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 0 5px;
+    width: 20%;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #9e600f;
+    border: 1px solid #9e600f;
+}
+
+.card2-excel form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card2-excel form label {
+    margin-bottom: 10px;
+}
+
+.btn-generar {
+    width: 20%;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #12203e;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 3px 0;
+}
+
+.container .footer {
+    min-height: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+    grid-area: footer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "header header header header"
+            "nav nav nav nav"
+            "main main main main"
+            "footer footer footer footer";
+    }
+
+    .container .nav {
+        min-height: 100px;
+    }
+
+    .container .nav .navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container .nav .navegacion a,
+    .container .nav .navegacion a span {
+        font-size: 12px;
+    }
+
+    .section {
+        grid-template-areas: 
+            "card1 card1"
+            "card2 card2"
+    }
+
+    .section .card1,
+    .section .card2 {
+        min-height: 500px;
+    }
+
+    .container .nav .navegacion a:hover {
+        font-size: 14px;
+    }
+
+    .section-excel {
+        grid-template-areas: 
+            "card1 card1"
+            "card2 card2";
+    }
+}
