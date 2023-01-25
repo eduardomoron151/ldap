@@ -22,7 +22,7 @@
                     <div class="card1-excel">
                         <h4>Instrucciones</h4>
                         <ol>
-                            <li>Descargue el formato excel. <a class="btn-descargar" href="ExcelCedula.php" target="_blank">Descargar</a></li>
+                            <li>Descargue el formato excel. <a class="btn-descargar" href="formatoExcel.php" target="_blank">Descargar</a></li>
                             <li>Llene el formato solo en la columna de <span class="text-alerta">cedula</span></li>
                             <li>Adjunte el archivo excel en el formulario.</li>
                             <li>Click en generar y la descarga del excel generado comenzara con los datos completos.</li>
